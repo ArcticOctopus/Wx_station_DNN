@@ -1,8 +1,9 @@
+from importlib.resources import path
 import pandas as pd
 import numpy as np
 import datetime
 
-
+parent_folder = os.path.dirname(path)
 NAO_file_path = "Data/nao.reanalysis.t10trunc.1948-present.txt"
 PNA_file_path = "Data/pna.reanalysis.t10trunc.1948-present.txt"
 SOI_file_path = "Data/SOIdata"
