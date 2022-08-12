@@ -256,7 +256,8 @@ lin_reg = LinearRegression()
 # plot_learning_curves(lin_reg, fit_model_poly, model_labels)
 
 ###### cross Validation ####
-scores = cross_val_score(lin_reg, fit_model[target_forecast:], model_labels[target_forecast:], 
+scores = cross_val_score(lin_reg, 
+                         fit_model[target_forecast:], model_labels[target_forecast:], 
                          scoring = "neg_mean_squared_error", cv=10, error_score='raise')
 
 rmse_scores = np.sqrt(-scores)
