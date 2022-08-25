@@ -39,12 +39,12 @@ Sounding_filepath_20 = data_parent_directory + "USM00072365-data.txt" #Albuquerq
 Sounding_filepath_21 = data_parent_directory + "USM00072274-data.txt" #Touscon, AZ, Dense Data from 1969
 Sounding_filepath_22 = data_parent_directory + "USM00072317-data.txt" #Greensboro, NC, Dense Data from 1969
 
-Station_data_file_path = data_parent_directory + "KNGU_station_data.txt" # KIAD_Station_data.txt  KSDF_station_data.csv KNGU_station_data.txt
+Station_data_file_path = data_parent_directory + "KSDF_station_data.csv" # KIAD_Station_data.txt  KSDF_station_data.csv KNGU_station_data.txt
 
 Target_Value = "TMAX" #Target_Value is the parameter you want to predict. Can be 'TAVG', 'TMAX', 'TMIN'
 
 observation_start_date = pd.to_datetime("1965-4-1") #for if the observation begins at any other time than the beginning of the dataset
-target_forecast = 30
+target_forecast = 7
 test_ratio = .1
 
 ### Section for selecting which months of the year to include in the dataset
